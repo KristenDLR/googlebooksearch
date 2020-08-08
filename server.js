@@ -45,7 +45,7 @@ connection.once("open", function() {
 //is changed to folder routes
 
 //Below routes created via vid: The router will be added as a middleware and will take control of request starting with path /googlebooks
-app.use("/api", router);
+app.use("/", router);
 
 //end point
 router.route("/").get(function(req, res) {
